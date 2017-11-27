@@ -17,11 +17,9 @@ script:
   - cd build
   - cmake .. 
   - make
-  - cd ..
-  - ./run_test.sh
-  - cd build
+
 after_success:
-  - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*"
+  - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/server/.*.cpp.*"
 
 notifications:
   email: false
