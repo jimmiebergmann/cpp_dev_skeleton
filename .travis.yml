@@ -1,8 +1,16 @@
 language:
   - cpp
 
+compiler:
+  - gcc
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+
 install:
-  - sudo pip install cpp-coveralls
+  - pip install --user cpp-coveralls
 
 script:
   - mkdir build
