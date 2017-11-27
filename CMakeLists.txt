@@ -8,9 +8,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 # Recurse into the "Hello" and "Demo" subdirectories. This does not actually
 # cause another cmake executable to run. The same process will walk through
 # the project's entire directory structure.
-add_subdirectory (source/server)
-add_subdirectory (source/bin/server)
-add_subdirectory (test/server)
+add_subdirectory (${PROJECT_SOURCE_DIR}/source/server)
+add_subdirectory (${PROJECT_SOURCE_DIR}/source/bin/server)
+add_subdirectory (${PROJECT_SOURCE_DIR}/test/server)
 #add_subdirectory (Demo)
 
 
