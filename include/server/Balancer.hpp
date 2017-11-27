@@ -10,7 +10,13 @@ namespace dof
 
 		Balancer();
 
-		int test;
+		void Set(const int value);
+
+		int Get() const;
+
+	private:
+
+		int m_Value;
 
 	};
 

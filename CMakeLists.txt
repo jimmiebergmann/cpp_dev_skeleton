@@ -10,6 +10,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 # the project's entire directory structure.
 add_subdirectory (source/server)
 add_subdirectory (source/bin/server)
+add_subdirectory (test/server)
 #add_subdirectory (Demo)
 
 
