@@ -13,9 +13,11 @@ install:
   - pip install --user cpp-coveralls
 
 script:
+  - ls
   - cmake --version
   - mkdir build
   - cd build
+  - ls ..
   - cmake .. 
   - make
 
