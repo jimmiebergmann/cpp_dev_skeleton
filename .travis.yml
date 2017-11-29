@@ -20,6 +20,8 @@ script:
   - ls ..
   - cmake .. 
   - make
+  - cd ..
+  - ./bin/server_tests
 
 after_success:
   - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/server/.*.cpp.*"
